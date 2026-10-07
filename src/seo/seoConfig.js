@@ -1,5 +1,5 @@
 // Central SEO configuration. Replace SITE_URL with your real domain before launch.
-export const SITE_URL = 'https://contractguard.app';
+export const SITE_URL = 'https://contractguard-1.netlify.app';
 export const SITE_NAME = 'ContractGuard';
 export const OG_IMAGE = SITE_URL + '/og-image.png'; // add a 1200x630 image at public/og-image.png
 

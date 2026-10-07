@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://contractguard.app/sitemap.xml
+Sitemap: https://contractguard-1.netlify.app//sitemap.xml
