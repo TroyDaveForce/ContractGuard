@@ -18,9 +18,6 @@ An AI-style contract reader for freelancers. Paste a contract, get a risk score,
 4. Payments are SIMULATED. Search for `TODO: integrate Stripe Checkout here` in `src/pages/Analyzer.jsx` and connect Stripe Checkout (Payment Links work without a backend). Remove the "Simulate successful payment" button from `src/components/PaywallModal.jsx` when real payments go live.
 5. Everything is client-side, so the paywall can be bypassed by someone who edits localStorage. For real revenue protection, verify payments on a server later.
 
-## AdSense notes (Nigeria and elsewhere)
-
-AdSense does work in Nigeria, but you must verify your address and identity with Google first. Payouts only happen once your balance passes $100. The AdSlot component has a fixed height so the page never jumps, and ads can never block the tool.
 
 ## Deploy to Vercel
 
