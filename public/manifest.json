@@ -1,0 +1,13 @@
+{
+  "name": "ContractGuard - AI Contract Reader for Freelancers",
+  "short_name": "ContractGuard",
+  "description": "Scan freelance contracts, spot risky clauses and get fairer wording in plain English.",
+  "start_url": "/ai-contract-reader",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0b1b3a",
+  "theme_color": "#0b1b3a",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

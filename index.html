@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!--
+      ================= GOOGLE ADSENSE SWITCH =================
+      USE_ADSENSE: set to false to remove ads entirely.
+      REPLACE ca-pub-XXXXXXXXXXXXXXXX below with your real publisher ID.
+      (Also update ADSENSE_CLIENT in src/seo/seoConfig.js.)
+      The script is only loaded once the ID is no longer the placeholder.
+
+      NOTE: AdSense does work in Nigeria, but the publisher must verify
+      their address and identity first, and payouts only happen once the
+      balance passes $100. Ads must never block or break the main tool.
+
+      The tag this injects is equivalent to:
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+    -->
+    <script>
+      var USE_ADSENSE = true;
+      var ADSENSE_PUBLISHER_ID = 'ca-pub-XXXXXXXXXXXXXXXX'; // <-- REPLACE with real publisher ID
+      if (USE_ADSENSE && ADSENSE_PUBLISHER_ID.indexOf('XXXX') === -1) {
+        var adScript = document.createElement('script');
+        adScript.async = true;
+        adScript.crossOrigin = 'anonymous';
+        adScript.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=' + ADSENSE_PUBLISHER_ID;
+        document.head.appendChild(adScript);
+      }
+    </script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ContractGuard &mdash; Free Freelance Contract Review &amp; Risk Checker</title>
+    <meta name="description" content="ContractGuard reads your freelance contract, highlights risky clauses, explains them in plain English and suggests fairer wording." />
+    <meta name="theme-color" content="#0b1b3a" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>ContractGuard needs JavaScript to analyze contracts in your browser.</noscript>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
